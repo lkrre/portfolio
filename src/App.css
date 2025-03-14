@@ -1,4 +1,15 @@
 @import "tailwindcss";
+@theme{
+  --color-dark: #1c202b;
+  --color-raspberry: #e0005aff;
+  --color-pine-green: #157a6eff;
+  --color-raisin-black: #232020ff;
+  --color-sunglow: #ffd166ff;
+  --color-dodger-blue: #2191fbff;
+  --color-light-sky-blue: #9bcefdff;
+  --color-tea-green: #dae8b0ff;
+  --color-moss-green: #829e2eff;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -36,8 +47,4 @@
 
 .card {
   padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
