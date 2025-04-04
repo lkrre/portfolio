@@ -1,4 +1,17 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: white;
+  --color-text: #1c202b;
+}
+
+@layer base {
+  @variant dark {
+    --color-background: #1c202b;
+    --color-text: white;
+  }
+}
 @theme{
   --color-dark: #1c202b;
   --color-raspberry: #e0005aff;
@@ -18,8 +31,6 @@
 }
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
