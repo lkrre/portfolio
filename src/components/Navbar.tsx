@@ -24,7 +24,6 @@ interface NavbarProps {
 
 export const Navbar = ({ onSectionChange }: NavbarProps) => {
   const { t } = useTranslation();
-  const colCount = NAV_ITEMS.length + 1;
 
   return (
     <nav className="fixed top-0 w-full h-12 bg-transparent border-4 border-winter border-dashed z-50">

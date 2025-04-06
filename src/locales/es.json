@@ -1,7 +1,10 @@
 {
-    "home": "Inicio",
     "about": "Acerca de mi",
-    "projects": "Proyectos",
+    "and": "y",
+    "by me": "por mí",
     "contact": "Contacto",
+    "home": "Inicio",
+    "made with": "Hecho con",
+    "projects": "Proyectos",
     "software engineer": "INGENIERO DE SOFTWARE"
 }
