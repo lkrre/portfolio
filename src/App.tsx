@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Navbar } from './components/Navbar'
 import { Palette } from './components/Palette'
@@ -10,7 +8,6 @@ import { Projects } from './components/Sections/Projects'
 import { Contact } from './components/Sections/Contact'
 
 function App() {
-  const [count, setCount] = useState(0)
   const [currentSection, setCurrentSection] = useState("home");
 
   const renderSection = () => {
@@ -25,33 +22,26 @@ function App() {
 
   return (
     <>
-      <Navbar onSectionChange={(id) => setCurrentSection(id)} />
-      {/* <PixelTransition key={currentSection}> */}
-      <div className='w-full'>
-        {renderSection()}
-      </div>
-      {/* </PixelTransition> */}
-      <Palette/>
-      <div className='flex'>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className='text-pine-green'>Vite + React</h1>
-      <div className="card text-moss-green">
-        <button className='' onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p className='text-raspberry'>
-          Edit <span className='text-dodger-blue'>src/App.tsx</span> and save to test HMR
-        </p>
-      </div>
-      <p className="text-sunglow">
-        Click on the Vite and <span className='text-light-sky-blue'>React</span> logos to learn more
-      </p>
+      <Navbar onSectionChange={(id) => setCurrentSection(id)}/>
+      <main className="flex-1 flex flex-col justify-center items-center pt-12 mx-4 md:mx-16 xl:mx-32">
+        {/* <PixelTransition key={currentSection}> */}
+        <div className=''>
+          {renderSection()}
+        </div>
+        {/* </PixelTransition> */}
+        {/* <Palette/>
+        <div className='flex'>
+          <a href="https://vite.dev" target="_blank">
+            <img src={viteLogo} className="logo" alt="Vite logo" />
+          </a>
+          <a href="https://react.dev" target="_blank">
+            <img src={reactLogo} className="logo react" alt="React logo" />
+          </a>
+        </div> */}
+      </main>
+      <footer className='self-center'>
+        a
+      </footer>
     </>
   )
 }
