@@ -6,6 +6,7 @@ import { Home } from './components/Sections/Home'
 import { About } from './components/Sections/About'
 import { Projects } from './components/Sections/Projects'
 import { Contact } from './components/Sections/Contact'
+import { Footer } from './components/Sections/Footer'
 
 function App() {
   const [currentSection, setCurrentSection] = useState("home");
@@ -29,7 +30,8 @@ function App() {
           {renderSection()}
         </div>
         {/* </PixelTransition> */}
-        {/* <Palette/>
+        {/* 
+        <Palette/>
         <div className='flex'>
           <a href="https://vite.dev" target="_blank">
             <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -39,9 +41,7 @@ function App() {
           </a>
         </div> */}
       </main>
-      <footer className='self-center'>
-        a
-      </footer>
+      <Footer/>
     </>
   )
 }

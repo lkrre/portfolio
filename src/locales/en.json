@@ -1,7 +1,10 @@
 {
-    "home": "Home",
     "about": "About",
-    "projects": "Projects",
+    "and": "and",
+    "by me": "by me",
     "contact": "Contact",
+    "home": "Home",
+    "made with": "Made with",
+    "projects": "Projects",
     "software engineer": "SOFTWARE ENGINEER"
 }
