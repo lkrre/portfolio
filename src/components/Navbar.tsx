@@ -27,7 +27,7 @@ export const Navbar = ({ onSectionChange }: NavbarProps) => {
   const colCount = NAV_ITEMS.length + 1;
 
   return (
-    <nav className="fixed top-0 w-full bg-transparent border-4 border-winter border-dashed z-50">
+    <nav className="fixed top-0 w-full h-12 bg-transparent border-4 border-winter border-dashed z-50">
       <div className={`flex justify-evenly divide-x-5 divide-winter divide-dashed py-2 text-center items-center`}>
         {NAV_ITEMS.map(({ id, label, icon: Icon }) => (
           <div

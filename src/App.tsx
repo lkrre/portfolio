@@ -22,10 +22,10 @@ function App() {
 
   return (
     <>
-      <Navbar onSectionChange={(id) => setCurrentSection(id)} />
-      <div id="Content" className='mx-4 md:mx-8 xl:mx-16'>
+      <Navbar onSectionChange={(id) => setCurrentSection(id)}/>
+      <main className="flex-1 flex flex-col justify-center items-center pt-12 mx-4 md:mx-16 xl:mx-32">
         {/* <PixelTransition key={currentSection}> */}
-        <div>
+        <div className=''>
           {renderSection()}
         </div>
         {/* </PixelTransition> */}
@@ -38,7 +38,10 @@ function App() {
             <img src={reactLogo} className="logo react" alt="React logo" />
           </a>
         </div> */}
-      </div>
+      </main>
+      <footer className='self-center'>
+        a
+      </footer>
     </>
   )
 }
