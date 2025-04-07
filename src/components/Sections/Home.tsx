@@ -8,6 +8,7 @@ export const Home = () => {
     return <>
         <h1 className="text-3xl my-4">Laura <span className="text-violet">Karina</span> Rámirez</h1>
         <span className="text-cornflower my-2">{t("software engineer")}</span>
+        <p className="text-xs m-4">rrelak@gmai.com</p>
         <div className="flex justify-center gap-2 my-12 text-white">
             <a href="https://www.linkedin.com/in/rrelak/" target="blank">
                 <Linkedin className="bg-true-blue h-6 w-6 rounded"/>

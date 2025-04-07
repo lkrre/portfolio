@@ -2,7 +2,7 @@ import { Trans, TransProps } from 'react-i18next';
 
 const FormattedTrans = (props: TransProps) => {
   return (
-    <div>
+    <div className='mb-12'>
         <Trans
         {...props}
         components={{
