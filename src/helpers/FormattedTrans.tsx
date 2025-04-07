@@ -1,10 +1,11 @@
-import { Trans, TransProps } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
-const FormattedTrans = (props: TransProps) => {
+const FormattedTrans = ({ i18nKey }: { i18nKey: string }) => {
+  const { t } = useTranslation();
   return (
     <div className='mb-12'>
         <Trans
-        {...props}
+        i18nKey={i18nKey}
         components={{
             italic: <span className="italic" />,
             gray: <span className="text-gray" />,
@@ -28,8 +29,7 @@ const FormattedTrans = (props: TransProps) => {
             tartOrange: <span className="text-tart-orange" />,
             lilac: <span className="text-lilac" />,
             violet: <span className="text-violet" />,
-            blueGray: <span className="text-blue-gray" />,
-            ...(props.components || {})
+            blueGray: <span className="text-blue-gray" />
         }}
         />
     </div>
