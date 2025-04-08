@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Problem Solving",
+        "value": 9,
+        "descriptionKey": "skillDescription.Problem Solving",
+        "color": "true-blue"
+    },
+    {
+        "name": "Critical Thinking",
+        "value": 8,
+        "descriptionKey": "skillDescription.Critical Thinking",
+        "color": "violet"
+    },
+    {
+        "name": "Adaptability",
+        "value": 10,
+        "descriptionKey": "skillDescription.Adaptability",
+        "color": "burlywood"
+    },
+    {
+        "name": "Team Collaboration",
+        "value": 10,
+        "descriptionKey": "skillDescription.Team Collaboration",
+        "color": "russian-green"
+    },
+    {
+        "name": "Knowledge Sharing",
+        "value": 7,
+        "descriptionKey": "skillDescription.Knowledge Sharing",
+        "color": "antique-brass"
+    },
+    {
+        "name": "Empathy",
+        "value": 6,
+        "descriptionKey": "skillDescription.Empathy",
+        "color": "violet"
+    },
+    {
+        "name": "Ownership",
+        "value": 9,
+        "descriptionKey": "skillDescription.Ownership",
+        "color": "tart-orange"
+    },
+    {
+        "name": "Accountability",
+        "value": 8,
+        "descriptionKey": "skillDescription.Accountability",
+        "color": "gray"
+    },
+    {
+        "name": "Time Management",
+        "value": 7,
+        "descriptionKey": "skillDescription.Time Management",
+        "color": "antique-brass"
+    },
+    {
+        "name": "Curiosity",
+        "value": 10,
+        "descriptionKey": "skillDescription.Curiosity",
+        "color": "eucalyptus"
+    },
+    {
+        "name": "Resilience",
+        "value": 9,
+        "descriptionKey": "skillDescription.Resilience",
+        "color": "lilac"
+    }
+]

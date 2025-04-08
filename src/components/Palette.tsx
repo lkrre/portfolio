@@ -1,6 +1,6 @@
 export const Palette = () => {
     return <>
-        <div className="flex gap-1 flex-wrap w-full justify-between">
+        <div className="flex gap-1 flex-wrap w-full justify-between text-white">
             <p className='bg-base border-white border-1'>base</p>
             <p className='bg-onyx border-white border-1'>onyx</p>
             <p className='bg-gray border-white border-1'>gray</p>
