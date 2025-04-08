@@ -9,5 +9,32 @@
     "home": "Inicio",
     "made with": "Hecho con",
     "projects": "Proyectos",
-    "software engineer": "INGENIERO DE SOFTWARE"
+    "software engineer": "INGENIERO DE SOFTWARE",
+
+
+    "skillDescription": {
+        "Problem Solving": "Destaca al enfrentarse a bugs legendarios.",
+        "Critical Thinking": "Siempre analiza antes de atacar.",
+        "Adaptability": "Cambia de stacks tecnológicos como cambiar de armas en medio de una pelea.",
+        "Team Collaboration": "Sube de nivel más rápido cuando está en equipo con otros.",
+        "Knowledge Sharing": "Reparte pergaminos de sabiduría generosamente.",
+        "Empathy": "Escucha antes de lanzar soluciones.",
+        "Ownership": "Si acepta una misión, la cumple.",
+        "Accountability": "Aprende incluso de los fallos.",
+        "Time Management": "Siempre está a tiempo para la incursión.",
+        "Curiosity": "Explora constantemente nuevas herramientas e ideas.",
+        "Resilience": "SP11 Never Give Up."
+    },
+    "Problem Solving": "Resolución de Problemas",
+    "Critical Thinking": "Pensamiento Crítico",
+    "Adaptability": "Adaptabilidad",
+    "Team Collaboration": "Colaboración en Equipo",
+    "Knowledge Sharing": "Compartir Conocimiento",
+    "Empathy": "Empatía",
+    "Ownership": "Responsabilidad",
+    "Accountability": "Rendimiento de cuentas",
+    "Time Management": "Gestión del Tiempo",
+    "Curiosity": "Curiosidad",
+    "Resilience": "Resiliencia"
+    
 }

@@ -10,5 +10,31 @@
     "home": "Home",
     "made with": "Made with",
     "projects": "Projects",
-    "software engineer": "SOFTWARE ENGINEER"
+    "software engineer": "SOFTWARE ENGINEER",
+
+    "skillDescription" : {
+        "Problem Solving": "Thrives when facing legendary bugs.",
+        "Critical Thinking": "Always analyzes before striking.",
+        "Adaptability": "Switches tech stacks like changing weapons mid-fight.",
+        "Team Collaboration": "Levels up faster when teamed with others.",
+        "Knowledge Sharing": "Hands out wisdom scrolls generously.",
+        "Empathy": "Listens before casting solutions.",
+        "Ownership": "If a quest is accepted, it gets done.",
+        "Accountability": "Learns even from failed rolls.",
+        "Time Management": "Always on time for the raid.",
+        "Curiosity": "Constantly exploring new tools and ideas.",
+        "Resilience": "SP11 Never Give Up."
+    },
+    "Problem Solving": "Problem Solving",
+    "Critical Thinking": "Critical Thinking",
+    "Adaptability": "Adaptability",
+    "Team Collaboration": "Team Collaboration",
+    "Knowledge Sharing": "Knowledge Sharing",
+    "Empathy": "Empathy",
+    "Ownership": "Ownership",
+    "Accountability": "Accountability",
+    "Time Management": "Time Management",
+    "Curiosity": "Curiosity",
+    "Resilience": "Resilience"
+    
 }
