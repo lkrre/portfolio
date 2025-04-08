@@ -1,6 +1,6 @@
-import Linkedin from "../Icons/Linkedin";
-import GitHub from "../Icons/GitHub";
-import CloudDownload from "../Icons/CloudDownload";
+import Linkedin from "@/components/Icons/Linkedin";
+import GitHub from "@/components/Icons/GitHub";
+import CloudDownload from "@/components/Icons/CloudDownload";
 import { useTranslation } from "react-i18next";
 
 export const Home = () => {
@@ -8,7 +8,7 @@ export const Home = () => {
     return <>
         <h1 className="text-3xl my-4">Laura <span className="text-violet">Karina</span> Rámirez</h1>
         <span className="text-cornflower my-2">{t("software engineer")}</span>
-        <p className="text-xs m-4">rrelak@gmai.com</p>
+        <p className="text-xs m-4">rrelak@gmail.com</p>
         <div className="flex justify-center gap-2 my-12 text-white">
             <a href="https://www.linkedin.com/in/rrelak/" target="blank">
                 <Linkedin className="bg-true-blue h-6 w-6 rounded"/>
