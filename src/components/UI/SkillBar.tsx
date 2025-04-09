@@ -1,4 +1,9 @@
 import { useTranslation } from "react-i18next";
+interface SkillBarProps {
+  name: string;
+  value: number;
+  color: string;
+}
 
 const SkillBar: React.FC<SkillBarProps> = ({
     name,

@@ -1,9 +1,9 @@
 import { Trans, useTranslation } from 'react-i18next';
 
 const FormattedTrans = ({ i18nKey }: { i18nKey: string }) => {
-  const { t } = useTranslation();
+  const { i18n } = useTranslation();
   return (
-    <div className='mb-12'>
+    <div className='mb-12' key={i18n.language}>
         <Trans
         i18nKey={i18nKey}
         components={{
