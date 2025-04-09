@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import { useCallback } from "react";
 
 const FLAGS: Record<string, string> = {
-  es: "/flag-mx.svg",
-  en: "/flag-uk.svg",
+  es: `${import.meta.env.BASE_URL}flag-mx.svg`,
+  en: `${import.meta.env.BASE_URL}flag-uk.svg`,
 };
 
 export const LanguageToggle = () => {
