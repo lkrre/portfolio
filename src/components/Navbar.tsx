@@ -19,10 +19,11 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 interface NavbarProps {
+  currentSection: string,
   onSectionChange: (sectionId: string) => void;
 }
 
-export const Navbar = ({ onSectionChange }: NavbarProps) => {
+export const Navbar = ({ currentSection, onSectionChange }: NavbarProps) => {
   const { t } = useTranslation();
 
   return (
@@ -31,8 +32,8 @@ export const Navbar = ({ onSectionChange }: NavbarProps) => {
         {NAV_ITEMS.map(({ id, label, icon: Icon }) => (
           <div
               key={id}
-              onClick={() => onSectionChange(id)}
-              className="flex justify-center items-center focus:outline-none w-full h-full cursor-pointer"
+              onClick={id == currentSection ? undefined : () => onSectionChange(id)}
+              className={`flex justify-center items-center focus:outline-none w-full h-full ${id == currentSection ? '' : 'text-winter cursor-pointer'}`}
           >
               <span className="hidden md:block">{t(label)}</span>
               <Icon className="block md:hidden w-full my-auto" />
