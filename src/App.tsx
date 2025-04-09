@@ -23,14 +23,14 @@ function App() {
 
   return (
     <>
-      <Navbar onSectionChange={(id) => setCurrentSection(id)}/>
+      <Navbar currentSection={currentSection} onSectionChange={(id) => setCurrentSection(id)}/>
       <main className="flex-1 flex flex-col justify-center items-center pt-12 mx-4 md:mx-16 xl:mx-32">
         {/* <PixelTransition key={currentSection}> */}
         <div className=''>
           {renderSection()}
         </div>
         {/* </PixelTransition> */}
-        {/* <Palette/> */}
+        <Palette/>
       </main>
       <Footer/>
     </>
