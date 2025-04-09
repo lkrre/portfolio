@@ -30,7 +30,7 @@ function App() {
           {renderSection()}
         </div>
         {/* </PixelTransition> */}
-        <Palette/>
+        {/* <Palette/> */}
       </main>
       <Footer/>
     </>
