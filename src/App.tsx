@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Navbar } from './components/Navbar'
-import { Palette } from './components/Palette'
+// import { Palette } from './components/Palette'
 import { Home } from './components/Sections/Home'
 import { About } from './components/Sections/About'
 import { Projects } from './components/Sections/Projects'
