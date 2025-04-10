@@ -2,7 +2,7 @@
 @layer base {
     @variant dark {
         --color-base: #222222;
-        --color-text: #808080;
+        --color-text: #B0B0B0;
         --color-onyx: #3a3d41;
         --color-gray: #808080;
         --color-silver: #C8C8C8;
