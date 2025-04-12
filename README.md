@@ -1,5 +1,8 @@
 # My Portfolio Website
 
+[Go to portfolio](https://lkrre.github.io/portfolio/)
+
+
 A personal portfolio showcasing my skills, experience, and projects.
 
 ## Tech Stack
@@ -21,4 +24,6 @@ I'm using some of your icons.
 - Multi-language support (i18n)  
 - Fully responsive  
 - Easy to customize  
-- Simple folder structure  
+- Simple folder structure
+
+***FEEL FREE TO USE IT AS A TEMPLATE IF U LIKE IT***
