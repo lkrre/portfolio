@@ -1,0 +1,167 @@
+[
+    {
+        "name": "Centro database unification",
+        "description": {
+            "en": "",
+            "es": ""
+        },
+        "achievements": {
+            "en": [],
+            "es": []
+        },
+        "company": "Alluxi",
+        "stack": [
+            "python",
+            "mongodb",
+            "mssql",
+            "awslambda"
+        ],
+        "date": "",
+        "url": ""
+    },
+    {
+        "name": "Kouchea",
+        "description": {
+            "en": "",
+            "es": ""
+        },
+        "achievements": {
+            "en": [],
+            "es": []
+        },
+        "company": "Alluxi",
+        "stack": [
+            "laravel",
+            "bootstrap",
+            "vuejs",
+            "mysql",
+            "stripe",
+            "mercadopago"
+        ],
+        "date": "",
+        "url": ""
+    },
+    {
+        "name": "Subastas",
+        "description": {
+            "en": "",
+            "es": ""
+        },
+        "achievements": {
+            "en": [],
+            "es": []
+        },
+        "company": "Alluxi",
+        "stack": [
+            "django",
+            "celery",
+            "vuejs",
+            "tailwindcss",
+            "postgresql"
+        ],
+        "date": "",
+        "url": ""
+    },
+    {
+        "name": "SAR-Ventiapp",
+        "description": {
+            "en": "",
+            "es": ""
+        },
+        "achievements": {
+            "en": [],
+            "es": []
+        },
+        "company": "Alluxi",
+        "stack": [
+            "laravel",
+            "ventiapp",
+            "mysql",
+            "mssql"
+        ],
+        "date": "",
+        "url": ""
+    },
+    {
+        "name": "B2BSAR",
+        "description": {
+            "en": "",
+            "es": ""
+        },
+        "achievements": {
+            "en": [],
+            "es": []
+        },
+        "company": "Alluxi",
+        "stack": [
+            "laravel",
+            "alpinejs",
+            "tailwindcss",
+            "livewire",
+            "mysql",
+            "mssql"
+        ],
+        "date": "",
+        "url": ""
+    },
+    {
+        "name": "Horsebook",
+        "description": {
+            "en": "",
+            "es": ""
+        },
+        "achievements": {
+            "en": [],
+            "es": []
+        },
+        "company": "Alluxi",
+        "stack": [
+            "laravel",
+            "vuejs",
+            "bootstrap",
+            "sass",
+            "mysql",
+            "googlestorage"
+        ],
+        "date": "",
+        "url": ""
+    },
+    {
+        "name": "Reforward",
+        "description": {
+            "en": "",
+            "es": ""
+        },
+        "achievements": {
+            "en": [],
+            "es": []
+        },
+        "company": "Ultatek",
+        "stack": [
+            "corenet",
+            "csharp",
+            "microsoftforms",
+            "mssql"
+        ],
+        "date": "",
+        "url": ""
+    },
+    {
+        "name": "SQL Server Reporting Services",
+        "description": {
+            "en": "",
+            "es": ""
+        },
+        "achievements": {
+            "en": [],
+            "es": []
+        },
+        "company": "Ultatek",
+        "stack": [
+            "mssql",
+            "ssrs"
+        ],
+        "date": "",
+        "url": ""
+    }
+]
