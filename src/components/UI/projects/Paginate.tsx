@@ -25,12 +25,19 @@ export function Paginate<T>({
 }: PaginateProps<T>) {
   const [startIndex, setStartIndex] = useState(0)
   const [itemsToShow, setItemsToShow] = useState(breakpoints.lg || 3)
-  const isScrolling = useRef(false)
-  const scrollRef = useRef<HTMLDivElement>(null)
 
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const isScrolling = useRef(false)
   const maxIndex = Math.max(0, items.length - itemsToShow)
+  const maxIndexRef = useRef(maxIndex)
+
+  useEffect(() => {
+    console.log("useEffect 0")
+    maxIndexRef.current = Math.max(0, items.length - itemsToShow)
+  }, [items.length, itemsToShow])
 
   const updateItemsToShow = () => {
+    console.log("updateItemShow")
     const width = window.innerWidth
     if (width >= 1024 && breakpoints.lg) setItemsToShow(breakpoints.lg)
     else if (width >= 768 && breakpoints.md) setItemsToShow(breakpoints.md)
@@ -38,25 +45,26 @@ export function Paginate<T>({
   }
 
   useEffect(() => {
+    console.log("useEffect 1")
     updateItemsToShow()
     window.addEventListener("resize", updateItemsToShow)
     return () => window.removeEventListener("resize", updateItemsToShow)
   }, [])
 
   useEffect(() => {
+    console.log("useEffect 2")
     const container = scrollRef.current
     if (!container) return
 
     const handleWheel = (e: WheelEvent) => {
+      console.log("handleWheel")
       e.preventDefault()
-
       if (isScrolling.current) return
 
       const direction = e.deltaY > 0 ? 1 : -1
       setStartIndex((prev) => {
         const next = prev + direction
-        if (next < 0) return 0
-        if (next > maxIndex) return maxIndex
+        if (next < 0 || next > maxIndexRef.current || next === prev) return prev
         return next
       })
 
@@ -68,7 +76,7 @@ export function Paginate<T>({
 
     container.addEventListener("wheel", handleWheel, { passive: false })
     return () => container.removeEventListener("wheel", handleWheel)
-  }, [maxIndex, scrollDelay])
+  }, [scrollDelay])
 
   return (
     items.length > 0 && (
@@ -79,17 +87,14 @@ export function Paginate<T>({
             {startIndex > 0 && (
               <button
                 className="hover:text-winter"
-                onClick={() => setStartIndex(startIndex - 1)}
+                onClick={() => setStartIndex((prev) => Math.max(0, prev - 1))}
               >
                 <LeftArrow className="size-6" />
               </button>
             )}
           </div>
 
-          <div
-            ref={scrollRef}
-            className={`w-full mx-auto`}
-          >
+          <div ref={scrollRef} className={`w-full mx-auto`}>
             <div className="flex flex-wrap justify-center">
               {items
                 .slice(startIndex, startIndex + itemsToShow)
@@ -101,7 +106,7 @@ export function Paginate<T>({
             {startIndex < maxIndex && (
               <button
                 className="hover:text-winter"
-                onClick={() => setStartIndex(startIndex + 1)}
+                onClick={() => setStartIndex((prev) => Math.min(maxIndex, prev + 1))}
               >
                 <RightArrow className="size-6" />
               </button>

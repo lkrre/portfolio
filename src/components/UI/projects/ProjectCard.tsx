@@ -1,3 +1,5 @@
+import React from "react"
+
 type Description = {
     en: string,
     es: string,
@@ -25,7 +27,7 @@ type Description = {
     iconSize?: string
   }
   
-  export const ProjectCard = ({
+  export const ProjectCard = React.memo(({
     project,
     className = "w-1/1 md:w-1/2 lg:w-1/3 h-64 lg:h-96",
     borderColor = "border-winter",
@@ -40,9 +42,14 @@ type Description = {
             className="absolute inset-0 w-full h-full object-cover object-center opacity-20"
             style={{ imageRendering: 'pixelated' }}
             onError={(e) => {
-                e.currentTarget.src = `${import.meta.env.BASE_URL}projects/default.png`
-                e.currentTarget.className = "absolute inset-0 object-center m-auto h-full opacity-20"
-            }}
+              const img = e.currentTarget
+              if (!img.dataset.fallback) {
+                img.dataset.fallback = "true"
+                img.src = `${import.meta.env.BASE_URL}projects/default.png`
+                img.className =
+                  "absolute inset-0 object-center m-auto h-full opacity-20"
+              }}
+            }
             />
     
             <div className="relative p-4 h-full flex justify-between">
@@ -65,5 +72,5 @@ type Description = {
       </div>
     )
   }
-  
+) 
   
