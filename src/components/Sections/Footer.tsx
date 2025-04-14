@@ -7,7 +7,7 @@ export const Footer = () => {
     const { t } = useTranslation();
 
     return <>
-        <footer className="flex flex-row items-center justify-center text-xs py-4">
+        <footer className="flex flex-row items-center justify-center text-xs my-12">
             {t('made with')}
             <HeartIcon className="text-tart-orange mx-2 size-4"/> ,
             <a href="https://vite.dev" target="_blank">

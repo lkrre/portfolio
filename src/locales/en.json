@@ -35,6 +35,11 @@
     "Accountability": "Accountability",
     "Time Management": "Time Management",
     "Curiosity": "Curiosity",
-    "Resilience": "Resilience"
+    "Resilience": "Resilience",
+    "projectsSection": {
+        "personalProjects": "Personal Projects",
+        "professionalProjects": "Professional Projects",
+        "otherProjects": "Other Projects"
+    }
     
 }
