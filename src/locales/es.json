@@ -35,6 +35,11 @@
     "Accountability": "Rendimiento de cuentas",
     "Time Management": "Gestión del Tiempo",
     "Curiosity": "Curiosidad",
-    "Resilience": "Resiliencia"
+    "Resilience": "Resiliencia",
+    "projectsSection": {
+        "personalProjects": "Proyectos Personales",
+        "professionalProjects": "Proyectos Profesionales",
+        "otherProjects": "Otros Proyectos"
+    }
     
 }
