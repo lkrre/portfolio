@@ -7,6 +7,7 @@ import { About } from './components/Sections/About'
 import { Projects } from './components/Sections/Projects'
 import { Contact } from './components/Sections/Contact'
 import { Footer } from './components/Sections/Footer'
+// import { TechLogo } from './components/TechLogos'
 
 function App() {
   const [currentSection, setCurrentSection] = useState("home");
@@ -22,18 +23,17 @@ function App() {
   };
 
   return (
-    <>
+    <div className='flex flex-col min-w-screen min-h-screen'>
       <Navbar currentSection={currentSection} onSectionChange={(id) => setCurrentSection(id)}/>
-      <main className="flex-1 flex flex-col justify-center items-center pt-12 mx-4 md:mx-16 xl:mx-32">
+      <main className="flex-1 flex flex-col justify-center items-center mt-12 m-auto w-full md:w-23/24 lg:w-11/12 h-full">
         {/* <PixelTransition key={currentSection}> */}
-        <div className=''>
-          {renderSection()}
-        </div>
+        {renderSection()}
         {/* </PixelTransition> */}
         {/* <Palette/> */}
+        {/* <TechLogo/> */}
       </main>
       <Footer/>
-    </>
+    </div>
   )
 }
 
