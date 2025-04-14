@@ -1,6 +1,8 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState, useCallback } from "react"
 import LeftArrow from "@/components/Icons/LeftArrow"
 import RightArrow from "@/components/Icons/RightArrow"
+import { useWheelScroll } from "@/hooks/useWheelScroll"
+import { useTouchDrag } from "@/hooks/useTouchDrag"
 
 type PaginateProps<T> = {
   items: T[]
@@ -25,19 +27,11 @@ export function Paginate<T>({
 }: PaginateProps<T>) {
   const [startIndex, setStartIndex] = useState(0)
   const [itemsToShow, setItemsToShow] = useState(breakpoints.lg || 3)
-
   const scrollRef = useRef<HTMLDivElement>(null)
-  const isScrolling = useRef(false)
-  const maxIndex = Math.max(0, items.length - itemsToShow)
-  const maxIndexRef = useRef(maxIndex)
 
-  useEffect(() => {
-    console.log("useEffect 0")
-    maxIndexRef.current = Math.max(0, items.length - itemsToShow)
-  }, [items.length, itemsToShow])
+  const maxIndex = Math.max(0, items.length - itemsToShow)
 
   const updateItemsToShow = () => {
-    console.log("updateItemShow")
     const width = window.innerWidth
     if (width >= 1024 && breakpoints.lg) setItemsToShow(breakpoints.lg)
     else if (width >= 768 && breakpoints.md) setItemsToShow(breakpoints.md)
@@ -45,38 +39,24 @@ export function Paginate<T>({
   }
 
   useEffect(() => {
-    console.log("useEffect 1")
     updateItemsToShow()
     window.addEventListener("resize", updateItemsToShow)
     return () => window.removeEventListener("resize", updateItemsToShow)
   }, [])
 
-  useEffect(() => {
-    console.log("useEffect 2")
-    const container = scrollRef.current
-    if (!container) return
-
-    const handleWheel = (e: WheelEvent) => {
-      console.log("handleWheel")
-      e.preventDefault()
-      if (isScrolling.current) return
-
-      const direction = e.deltaY > 0 ? 1 : -1
+  const handleScroll = useCallback(
+    (direction: number) => {
       setStartIndex((prev) => {
         const next = prev + direction
-        if (next < 0 || next > maxIndexRef.current || next === prev) return prev
+        if (next < 0 || next > maxIndex || next === prev) return prev
         return next
       })
+    },
+    [maxIndex]
+  )
 
-      isScrolling.current = true
-      setTimeout(() => {
-        isScrolling.current = false
-      }, scrollDelay)
-    }
-
-    container.addEventListener("wheel", handleWheel, { passive: false })
-    return () => container.removeEventListener("wheel", handleWheel)
-  }, [scrollDelay])
+  useWheelScroll({ ref: scrollRef, onScroll: handleScroll, delay: scrollDelay })
+  useTouchDrag({ ref: scrollRef, onScroll: handleScroll })
 
   return (
     items.length > 0 && (
@@ -106,7 +86,9 @@ export function Paginate<T>({
             {startIndex < maxIndex && (
               <button
                 className="hover:text-winter"
-                onClick={() => setStartIndex((prev) => Math.min(maxIndex, prev + 1))}
+                onClick={() =>
+                  setStartIndex((prev) => Math.min(maxIndex, prev + 1))
+                }
               >
                 <RightArrow className="size-6" />
               </button>
