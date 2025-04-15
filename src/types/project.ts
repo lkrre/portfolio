@@ -14,6 +14,6 @@ export type Project = {
     achievements?: Achievements
     company: string
     stack: string[]
-    date: string
-    url: string
+    date?: string
+    url?: string
 }

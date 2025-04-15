@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { Project } from '@/types/project'
 import Diamond from '@/components/Icons/Diamond'
+import ExternalLinkIcon from '@/components/Icons/ExternalLink'
 
 type Language = 'en' | 'es'
 
@@ -20,7 +21,7 @@ export const InfoPopup = ({ project, borderColor = "border-winter", }: InfoPopup
     const achievements = project.achievements?.[language] || project.achievements?.en || []
 
     return (
-        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center text-winter">
+        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center text-winter cursor-default">
             <div className={`relative w-full md:w-2/3 h-5/6 m-2 md:m-auto rounded-xl overflow-hidden border-4 ${borderColor} border-dashed`}>
                 <img
                     src={`${import.meta.env.BASE_URL}projects/${project.name}.png`}
@@ -29,7 +30,10 @@ export const InfoPopup = ({ project, borderColor = "border-winter", }: InfoPopup
                 />
 
                 <div className="relative z-10 bg-base/90 w-full h-full p-2 md:p-4">
-                    <h2 className="text-xl md:text-4xl font-bold m-2 md:m-4 text-cornflower">{project.name}</h2>
+                    <div className='flex items-end justify-center gap-2 m-2 md:m-4 text-cornflower'>
+                        <h2 className="text-xl md:text-4xl">{project.name}</h2>
+                        {project.url && <a href={project.url} target='blank'><ExternalLinkIcon className='size-4 md:size-8 m-1'/></a>}
+                    </div>
                     <div className='flex gap-2 text-3xs md:text-2xs justify-center items-center w-full mb-2 md:mb-8'>
                         {project.company && <span className='p-1 md:p-2 rounded bg-may-green/50'>{project.company}</span>}
                         {project.date && <span className='p-1 md:p-2 rounded bg-russian-green/50'>{project.date}</span>}
