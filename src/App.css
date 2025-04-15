@@ -4,6 +4,8 @@
 @theme {
   --color-background: white;
   --color-text: #222222;
+  --text-2xs: 0.6rem;
+  --text-3xs: 0.4rem;
 }
 @font-face {
   font-family: 'Press Start 2P';
