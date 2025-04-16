@@ -44,7 +44,7 @@ export const Projects = () => {
                     project={project}
                     borderColor="border-russian-green"
                     iconSize="size-4 md:size-6"
-                    className="w-1/2 md:w-1/3 lg:w-1/4 h-42 text-2xs md:text-xs"
+                    className="w-1/2 md:w-1/3 lg:w-1/4 h-52 text-2xs md:text-xs"
                     popup={false}
                 />
                 )}
