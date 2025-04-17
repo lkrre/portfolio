@@ -3,6 +3,7 @@
 @layer base {
     @variant dark {
         --color-bg: #222222;
+        --color-white: #fff;
         --color-text: #B0B0B0;
         --color-onyx: #3a3d41;
         --color-gray: #808080;

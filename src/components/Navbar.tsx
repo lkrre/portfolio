@@ -4,6 +4,7 @@ import ContactIcon from "./Icons/Contact";
 import FolderIcon from "./Icons/Folder";
 import HumanHandsUpIcon from "./Icons/HumanHandsUp";
 import { LanguageToggle } from "./LanguageToggle";
+import { ThemeToggle } from "./ThemeToggle";
 
 type NavItem = {
   id: string;
@@ -39,8 +40,9 @@ export const Navbar = ({ currentSection, onSectionChange }: NavbarProps) => {
               <Icon className="block md:hidden w-full my-auto" />
           </div>
         ))}
-        <div className="w-full my-auto" >
+        <div className="flex gap-4 justify-center items-center w-full" >
             <LanguageToggle />
+            <ThemeToggle />
         </div>
       </div>
     </nav>

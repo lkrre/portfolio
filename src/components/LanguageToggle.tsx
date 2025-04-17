@@ -15,7 +15,7 @@ export const LanguageToggle = () => {
   }, [i18n]);
 
   return (
-    <div className="text-center w-full">
+    <div className="text-center">
       <img
         src={FLAGS[i18n.language]}
         alt={i18n.language}
