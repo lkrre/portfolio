@@ -7,7 +7,6 @@ import { About } from './components/Sections/About'
 import { Projects } from './components/Sections/Projects'
 import { Contact } from './components/Sections/Contact'
 import { Footer } from './components/Sections/Footer'
-// import { TechLogo } from './components/TechLogos'
 
 function App() {
   const [currentSection, setCurrentSection] = useState("home");
@@ -30,7 +29,6 @@ function App() {
         {renderSection()}
         {/* </PixelTransition> */}
         {/* <Palette/> */}
-        {/* <TechLogo/> */}
       </main>
       <Footer/>
     </div>

@@ -29,7 +29,7 @@ export const InfoPopup = ({ project, borderColor = "border-winter", }: InfoPopup
                     className="absolute inset-0 w-full h-full object-cover object-center z-0"
                 />
 
-                <div className="relative z-10 bg-base/90 w-full h-full p-2 md:p-4">
+                <div className="relative z-10 bg-bg/90 w-full h-full p-2 md:p-4">
                     <div className='flex items-end justify-center gap-2 m-2 md:m-4 text-cornflower'>
                         <h2 className="text-xl md:text-4xl">{project.name}</h2>
                         {project.url && <a href={project.url} target='blank'><ExternalLinkIcon className='size-4 md:size-8 m-1'/></a>}
