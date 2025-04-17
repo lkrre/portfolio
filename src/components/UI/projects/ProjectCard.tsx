@@ -17,7 +17,7 @@ export const ProjectCard = React.memo(({
   project,
   className = "w-1/1 md:w-1/2 lg:w-1/3 h-64 lg:h-96",
   borderColor = "border-winter",
-  iconSize = "size-9",
+  iconSize = "h-9",
   popup =true
 }: ProjectCardProps) => {
   const { i18n } = useTranslation()

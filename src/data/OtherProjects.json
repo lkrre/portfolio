@@ -89,6 +89,18 @@
         "url": "https://new.alluxi.com/our-work/detail/nativis-projex"
     },
     {
+        "name": "SQL Server Reporting Services",
+        "description": {
+            "en": "Automated reports with data, calculations, and charts in client formats.",
+            "es": "Reportes automatizados con datos, cálculos y gráficas en formatos del cliente."
+        },
+        "company": "Ultatek",
+        "stack": [
+            "mssql",
+            "ssrs"
+        ]
+    },
+    {
         "name": "Speak_",
         "description": {
             "en": "Startup using AI for efficient, accurate, and bias-free recruitment.",

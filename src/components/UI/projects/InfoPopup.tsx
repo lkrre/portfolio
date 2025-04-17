@@ -43,7 +43,7 @@ export const InfoPopup = ({ project, borderColor = "border-winter", }: InfoPopup
                         <div key={i} className="p-1">
                             <img
                                 src={`${import.meta.env.BASE_URL}${tech}.svg`}
-                                className={`size-8 md:size-10 transition-all duration-300`}
+                                className={`h-8 md:h-10 transition-all duration-300`}
                                 alt={`${tech} logo`}
                             />
                         </div>
