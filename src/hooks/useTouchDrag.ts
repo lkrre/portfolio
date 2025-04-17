@@ -9,7 +9,7 @@ type UseTouchDragProps = {
 export const useTouchDrag = ({
     ref,
     onScroll,
-    threshold = 30,
+    threshold = 50,
 }: UseTouchDragProps) => {
     useEffect(() => {
         const container = ref.current
@@ -17,19 +17,23 @@ export const useTouchDrag = ({
 
         let startX = 0
         let endX = 0
+        let moved = false;
 
         const handleTouchStart = (e: TouchEvent) => {
             startX = e.touches[0].clientX
+            endX = startX
+            moved = false
         }
 
         const handleTouchMove = (e: TouchEvent) => {
             e.preventDefault()
+            moved = true;
             endX = e.touches[0].clientX
         }
 
         const handleTouchEnd = () => {
             const deltaX = endX - startX
-            if (Math.abs(deltaX) > threshold) {
+            if (moved && Math.abs(deltaX) > threshold) {
                 onScroll(deltaX < 0 ? 1 : -1)
             }
         }
