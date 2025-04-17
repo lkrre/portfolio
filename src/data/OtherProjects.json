@@ -1,87 +1,52 @@
 [
     {
-        "name": "Alluxi web page",
+        "name": "Horsebook",
         "description": {
-            "en": "",
-            "es": ""
+            "en": "Horse catalog and management system.",
+            "es": "Sistema de catálogo y gestión de caballos."
+        },
+        "company": "Alluxi",
+        "stack": [
+            "laravel",
+            "vuejs",
+            "bootstrap",
+            "sass",
+            "mysql",
+            "googlestorage"
+        ],
+        "url": "https://www.horsebooklasilla.com/"
+    },
+    {
+        "name": "SAR-Ventiapp",
+        "description": {
+            "en": "Automated stock syncing between SAR's ERP and online sales platforms via Ventiapp.",
+            "es": "Sincronización automática de stock entre el ERP de SAR y plataformas de venta en línea mediante Ventiapp."
+        },
+        "company": "Alluxi",
+        "stack": [
+            "laravel",
+            "ventiapp",
+            "mysql",
+            "mssql"
+        ]
+    },
+    {
+        "name": "Alluxi",
+        "description": {
+            "en": "Company's official web site",
+            "es": "Pagina web oficial de la compañia"
         },
         "company": "Alluxi",
         "stack": [
             "react"
         ],
-        "date": "",
-        "url": ""
-    },
-    {
-        "name": "Zplit",
-        "description": {
-            "en": "",
-            "es": ""
-        },
-        "company": "Alluxi",
-        "stack": [
-            "django",
-            "stripe",
-            "twilio"
-        ],
-        "date": "",
-        "url": ""
-    },
-    {
-        "name": "Speak",
-        "description": {
-            "en": "",
-            "es": ""
-        },
-        "company": "Alluxi",
-        "stack": [
-            "django",
-            "stripe",
-            "react",
-            "tailwindcss"
-        ],
-        "date": "",
-        "url": ""
-    },
-    {
-        "name": "Secodata",
-        "description": {
-            "en": "",
-            "es": ""
-        },
-        "company": "Alluxi",
-        "stack": [
-            "laravel",
-            "tailwindcss",
-            "alpinejs",
-            "sass"
-        ],
-        "date": "",
-        "url": ""
-    },
-    {
-        "name": "B2BSAR",
-        "description": {
-            "en": "",
-            "es": ""
-        },
-        "company": "Alluxi",
-        "stack": [
-            "laravel",
-            "alpinejs",
-            "tailwindcss",
-            "livewire",
-            "mysql",
-            "mssql"
-        ],
-        "date": "",
-        "url": ""
+        "url": "https://new.alluxi.com/"
     },
     {
         "name": "PEPE",
         "description": {
-            "en": "",
-            "es": ""
+            "en": "Campaign monitoring for tracking supporter and member engagement.",
+            "es": "Monitoreo de campañas para que partidos y candidatos sigan la participación de simpatizantes y afiliados."
         },
         "company": "Alluxi",
         "stack": [
@@ -90,47 +55,13 @@
             "livewire",
             "alpinejs",
             "mysql"
-        ],
-        "date": "",
-        "url": ""
-    },
-    {
-        "name": "Secodata",
-        "description": {
-            "en": "",
-            "es": ""
-        },
-        "company": "Alluxi",
-        "stack": [
-            "laravel",
-            "tailwindcss",
-            "alpinejs",
-            "sass"
-        ],
-        "date": "",
-        "url": ""
-    },
-    {
-        "name": "Nativis",
-        "description": {
-            "en": "",
-            "es": ""
-        },
-        "company": "Alluxi",
-        "stack": [
-            "django",
-            "postgresql",
-            "expo",
-            "tailwindcss"
-        ],
-        "date": "",
-        "url": ""
+        ]
     },
     {
         "name": "STS",
         "description": {
-            "en": "",
-            "es": ""
+            "en": "Ticketing and client support system for electronics repairing company.",
+            "es": "Sistema de tickets y soporte a clientes para compañia de reparación de electrónicos.."
         },
         "company": "Alluxi",
         "stack": [
@@ -140,8 +71,76 @@
             "nuxtjs",
             "tailwindcss",
             "sass"
+        ]
+    },
+    {
+        "name": "Nativis",
+        "description": {
+            "en": "Buy and rent sustainable homes for a greener planet.",
+            "es": "Compra y renta de hogares sostenibles para un planeta más verde."
+        },
+        "company": "Alluxi",
+        "stack": [
+            "django",
+            "postgresql",
+            "expo",
+            "tailwindcss"
         ],
-        "date": "",
-        "url": ""
+        "url": "https://new.alluxi.com/our-work/detail/nativis-projex"
+    },
+    {
+        "name": "SQL Server Reporting Services",
+        "description": {
+            "en": "Automated reports with data, calculations, and charts in client formats.",
+            "es": "Reportes automatizados con datos, cálculos y gráficas en formatos del cliente."
+        },
+        "company": "Ultatek",
+        "stack": [
+            "mssql",
+            "ssrs"
+        ]
+    },
+    {
+        "name": "Speak_",
+        "description": {
+            "en": "Startup using AI for efficient, accurate, and bias-free recruitment.",
+            "es": "Startup que usa IA para un reclutamiento eficiente, preciso y sin sesgos."
+        },
+        "company": "Alluxi",
+        "stack": [
+            "django",
+            "stripe",
+            "react",
+            "tailwindcss"
+        ],
+        "url": "https://speak.careers/"
+    },
+    {
+        "name": "Zplit",
+        "description": {
+            "en": "Payment service that allows you to make purchases with weekly installment payments.",
+            "es": "Servicio de pagos que permite realizar compras mediante pagos diferidos semanales."
+        },
+        "company": "Alluxi",
+        "stack": [
+            "django",
+            "stripe",
+            "twilio"
+        ]
+    },
+    {
+        "name": "Secodata",
+        "description": {
+            "en": "Solution for quick and easy capture of product-related information.",
+            "es": "Solución para captura rápida y sencilla de información relacionada con productos."
+        },
+        "company": "Alluxi",
+        "stack": [
+            "laravel",
+            "tailwindcss",
+            "alpinejs",
+            "sass"
+        ],
+        "url": "https://www.gs1mexico.org/infocode-gs1-mexico"
     }
 ]

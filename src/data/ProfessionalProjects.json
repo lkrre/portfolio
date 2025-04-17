@@ -2,12 +2,20 @@
     {
         "name": "Centro database unification",
         "description": {
-            "en": "",
-            "es": ""
+            "en": "Utility functions to extract, clean, and migrate data from two legacy databases into a new system for Centro university.",
+            "es": "Funciones para obtener, limpiar y migrar datos desde dos bases de datos heredadas hacia un nuevo sistema para la universidad Centro."
         },
         "achievements": {
-            "en": [],
-            "es": []
+            "en": [
+                "Saved clients an immeasurable amount of time by consolidating all their data into their latest ERP.",
+                "Optimized customer-provided queries, achieving up to 80% faster execution through improved sub-table handling and indexing.",
+                "Increased data accuracy by 30% by correcting and optimizing join parameters."
+            ],
+            "es": [
+                "Ahorro de tiempo invaluable para los clientes al consolidar toda su información en su ERP más reciente.",
+                "Optimización de consultas proporcionadas por el cliente, logrando hasta un 80% más de velocidad mediante mejoras en subtablas e indexación.",
+                "Mejora del 30% en la precisión de los datos al corregir y optimizar los parámetros de unión."
+            ]
         },
         "company": "Alluxi",
         "stack": [
@@ -16,81 +24,90 @@
             "mssql",
             "awslambda"
         ],
-        "date": "",
-        "url": ""
+        "date": "2024"
     },
     {
         "name": "Kouchea",
         "description": {
-            "en": "",
-            "es": ""
+            "en": "Math online learning platform where children study funnily and dynamically!",
+            "es": "Plataforma en linea de matemáticas donde los niños aprenden dinamicamente mientras se divierten!"
         },
         "achievements": {
-            "en": [],
-            "es": []
+            "en": [
+                "Improved user experience through key UI enhancements.",
+                "Increased user subscriptions by introducing a free trial plan.",
+                "Boosted long-term subscriptions by integrating secure payment options.",
+                "Suggested changes to the content upload flow to resolve issues impacting user experience."
+            ],
+            "es": [
+                "Mejora de la experiencia del usuario mediante mejoras clave en la interfaz.",
+                "Aumento de suscripciones al ofrecer un plan gratuito de prueba.",
+                "Incremento de suscripciones a largo plazo al integrar métodos de pago seguros.",
+                "Propuesta de cambios en el flujo de carga de contenido para resolver problemas que afectaban directamente la experiencia del usuario."
+            ]
         },
         "company": "Alluxi",
         "stack": [
             "laravel",
-            "bootstrap",
             "vuejs",
             "mysql",
+            "bootstrap",
             "stripe",
             "mercadopago"
         ],
-        "date": "",
-        "url": ""
+        "date": "2024",
+        "url": "https://kouchea.com/"
     },
     {
         "name": "Subastas",
         "description": {
-            "en": "",
-            "es": ""
+            "en": "Online real time horses auctions platform for Hípico la Silla",
+            "es": "Plataforma en linea para subastas de caballo en tiempo real para Hípico la Silla"
         },
         "achievements": {
-            "en": [],
-            "es": []
+            "en": [
+                "Increased participation in Hípico La Silla's in-person auctions by enabling remote users to place real-time online bids.",
+                "Implemented WebSockets for real-time bidding, ensuring data integrity and preventing issues like duplicate or invalid bids.",
+                "Developed a backend with role-based authentication and permissions management.",
+                "Enabled real-time updates of auction and horse status via WebSockets.",
+                "Integrated email notifications for auction status updates.",
+                "Automated state changes using Celery with scheduled triggers."
+            ],
+            "es": [
+                "Incremento de la participación en las subastas presenciales de Hípico La Silla al permitir pujas en línea en tiempo real para usuarios remotos.",
+                "Implementación de WebSockets para subastas en tiempo real, asegurando integridad de datos y evitando duplicados o montos inválidos.",
+                "Desarrollo del backend con autenticación por roles y gestión de permisos.",
+                "Actualización en tiempo real del estado de las subastas y caballos mediante WebSockets.",
+                "Integración de notificaciones por correo electrónico sobre el estado de las subastas.",
+                "Automatización de cambios de estado con Celery y disparadores programados."
+            ]
         },
         "company": "Alluxi",
         "stack": [
             "django",
-            "celery",
             "vuejs",
+            "celery",
             "tailwindcss",
             "postgresql"
         ],
-        "date": "",
-        "url": ""
-    },
-    {
-        "name": "SAR-Ventiapp",
-        "description": {
-            "en": "",
-            "es": ""
-        },
-        "achievements": {
-            "en": [],
-            "es": []
-        },
-        "company": "Alluxi",
-        "stack": [
-            "laravel",
-            "ventiapp",
-            "mysql",
-            "mssql"
-        ],
-        "date": "",
-        "url": ""
+        "date": "2024",
+        "url": "https://www.subastalasilla.com/"
     },
     {
         "name": "B2BSAR",
         "description": {
-            "en": "",
-            "es": ""
+            "en": "Web platform for clients to register their own item identifiers, enabling mapping with internal systems for use in later solutions.",
+            "es": "Plataforma web para que clientes registraran los identificadores propios de sus insumos, facilitando su vinculación con sistemas internos y su uso en soluciones posteriores."
         },
         "achievements": {
-            "en": [],
-            "es": []
+            "en": [
+                "Reduced client response time to under one day by enabling quick mapping between client and supplier identifiers within the ERP, streamlining the procurement process.",
+                "Led full-stack development of the application, including UI design with Tailwind templates, authentication, and permission management."
+            ],
+            "es": [
+                "Reducción del tiempo de respuesta del cliente a menos de un día al facilitar la asociación de identificadores entre cliente y proveedor en el ERP, agilizando el proceso de compra.",
+                "Desarrollo completo de la aplicación, incluyendo diseño de interfaz con plantillas de Tailwind, autenticación y gestión de permisos."
+            ]
         },
         "company": "Alluxi",
         "stack": [
@@ -101,40 +118,23 @@
             "mysql",
             "mssql"
         ],
-        "date": "",
-        "url": ""
-    },
-    {
-        "name": "Horsebook",
-        "description": {
-            "en": "",
-            "es": ""
-        },
-        "achievements": {
-            "en": [],
-            "es": []
-        },
-        "company": "Alluxi",
-        "stack": [
-            "laravel",
-            "vuejs",
-            "bootstrap",
-            "sass",
-            "mysql",
-            "googlestorage"
-        ],
-        "date": "",
-        "url": ""
+        "date": "2022"
     },
     {
         "name": "Reforward",
         "description": {
-            "en": "",
-            "es": ""
+            "en": "Minimum Viable Product (MVP) desktop application built to automate the transfer of production line-generated files to an internal server.",
+            "es": "Aplicación de escritorio MVP (Producto Mínimo Viable) desarrollada para automatizar la transferencia de archivos generados en línea de producción a servidor interno."
         },
         "achievements": {
-            "en": [],
-            "es": []
+            "en": [
+                "Rapid code refactor after real-world testing exposed unexpected behavior. Successfully completed and delivered on time.",
+                "Saved clients significant time by automating a previously manual file transfer process."
+            ],
+            "es": [
+                "Refactorización rápida del código tras pruebas reales que revelaron comportamientos inesperados. Proyecto completado y entregado a tiempo.",
+                "Ahorro significativo de tiempo para los clientes al automatizar un proceso de transferencia de archivos que antes era manual."
+            ]
         },
         "company": "Ultatek",
         "stack": [
@@ -143,25 +143,6 @@
             "microsoftforms",
             "mssql"
         ],
-        "date": "",
-        "url": ""
-    },
-    {
-        "name": "SQL Server Reporting Services",
-        "description": {
-            "en": "",
-            "es": ""
-        },
-        "achievements": {
-            "en": [],
-            "es": []
-        },
-        "company": "Ultatek",
-        "stack": [
-            "mssql",
-            "ssrs"
-        ],
-        "date": "",
-        "url": ""
+        "date": "2019"
     }
 ]

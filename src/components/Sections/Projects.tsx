@@ -43,8 +43,9 @@ export const Projects = () => {
                     key={index}
                     project={project}
                     borderColor="border-russian-green"
-                    iconSize="size-4 md:size-6"
-                    className="w-1/2 md:w-1/3 lg:w-1/4 h-42 text-xs"
+                    iconSize="h-4 md:h-6"
+                    className="w-1/2 md:w-1/3 lg:w-1/4 h-52 text-2xs md:text-xs"
+                    popup={false}
                 />
                 )}
             />
