@@ -17,7 +17,7 @@ const SkillBar: React.FC<SkillBarProps> = ({
       <div className={`w-full max-w-md my-4 text-left text-${color}`}>
         <div className="mb-1 text-sm font-semibold text-center">{t(name)}</div>
   
-        <div className="relative h-4 bg-base rounded overflow-hidden border-white border-1">
+        <div className="relative h-4 bg-bg rounded overflow-hidden border-white border-1">
           <div
             className={`h-full bg-${color}`}
             style={{ width: `${percentage}%`, transition: 'width 0.3s ease' }}

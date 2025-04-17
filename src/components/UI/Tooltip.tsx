@@ -23,7 +23,7 @@ const Tooltip = ({ children, content, color = "violet" }: TooltipProps) => {
             opacity-0 md:group-hover:opacity-90
             peer-focus:opacity-90
             transition duration-200 z-50 pointer-events-none
-            bg-base text-xs w-full p-4 flex items-center 
+            bg-bg text-xs w-full p-4 flex items-center 
             border-4 border-dashed border-${color} text-${color}
           `}
         >
