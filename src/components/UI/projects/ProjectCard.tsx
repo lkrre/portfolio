@@ -15,7 +15,7 @@ export type ProjectCardProps = {
 
 export const ProjectCard = React.memo(({
   project,
-  className = "w-1/1 md:w-1/2 lg:w-1/3 h-64 lg:h-96",
+  className = "w-1/1 md:w-1/2 lg:w-1/3 h-96",
   borderColor = "border-winter",
   iconSize = "h-9",
   popup =true
