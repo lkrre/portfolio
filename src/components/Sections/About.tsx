@@ -27,7 +27,7 @@ export const About = () => {
             <div className="w-full md:w-2/5">
             {
                 skills.map((skill: Skill, index: number) => (
-                    <Tooltip content={skill.descriptionKey} color={skill.color}>
+                    <Tooltip content={skill.descriptionKey} color={skill.color} key={index}>
                         <SkillBar name={skill.name} value={skill.value} color={skill.color} key={index}/>
                     </Tooltip>
                 ))}

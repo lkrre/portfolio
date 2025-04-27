@@ -8,7 +8,7 @@ const Sun = ({ className = "w-6 h-6" }: { className?: string }) => (
       stroke="1"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_604_3482)">
+      <g clipPath="url(#clip0_604_3482)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
