@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next"
 import HeartIcon from "../Icons/Heart";
 import viteLogo from "/vite.svg"
 import reactLogo from "/react.svg"
+import gsapLogo from "/gsap.svg"
 
 export const Footer = () => {
     const { t } = useTranslation();
@@ -12,10 +13,13 @@ export const Footer = () => {
             <HeartIcon className="text-tart-orange mx-2 size-4"/> ,
             <a href="https://vite.dev" target="_blank">
                 <img src={viteLogo} className="size-4 mx-2" alt="Vite logo" />
-            </a>
-            {t('and')}
+            </a> ,
             <a href="https://react.dev" target="_blank">
                 <img src={reactLogo} className="size-4 mx-2" alt="React logo" />
+            </a>
+            {t('and')}
+            <a href="https://gsap.com/" target="_blank">
+                <img src={gsapLogo} className="size-4 mx-2" alt="React logo" />
             </a>
             {t('by me')}.
         </footer>
